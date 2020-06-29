@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:black;
+    font-family: sans-serif;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+}
+    .logo img{
+        width: 80px;
+        margin-top: -20px;
+        margin-right: 48px;
+    }
+    .signup{
+        top: 40px;
+        right: 80px;
+        position: absolute;
+        text-decoration: none;
+        color: white;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        background-image: linear-gradient(black,black), radial-gradient(circle at top left, #1B1B1B, #7F7F7F);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    .signup span{
+        display: block;
+        padding: 8px 22px;
+    }
+.wrapper{
+    position: relative;
+    top: 20%;
+    left:20%;
+    transform: translate(-20%, -20%);
+}
+.wrapper h2{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 0 rgba(0,0,0,.5);
+    font-size: 60px;
+ }
+ span:before{
+    content:'';
+    animation: animate infinite 4s;
+ }
+@keyframes animate {
+   0%{
+       content: 'Shukri Abdi';
+}
+35%{
+    content:'Belly Mujinga' ;
+}
+70%{
+    content: 'Breonna Taylor';
+}
+100%{
+    content: 'someone';
+}
+ }
+.container{
+    width:1280px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+position: relative;
+}
+.container .box .imgBox img{
+   max-width: 100%;
+   transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+        transform: scale(1.2);
+ }
+.container .box .details {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,.8);
+            transform: scaleY(0);
+            transition: transform .5s;
+             }
+ .container .box:hover .details {
+    transform: scaleY(1);
+     }
+.container .box .details .content{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            padding: 15px;
+            color: #fff;
+                     }
+ .container .box .details .content h2{
+     margin: 0;
+     padding: 0;
+     font-size: 20px;
+     color: #ff0;
+    }
+    .container .box .details .content p{
+        margin: 10px 0 0;
+        padding: 0;
+       }

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Black Lives Matter</title>
+        <link rel="stylesheet" href="Page1.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li class="logo"><img src="https://www.axolandfriends.com/storage/app/media/images/blm_fist3.png"></li>
+                    <li><a class="active" href= "Home.html">HOME</a></li>
+                    <li><a href= "Aboutpg.html">ABOUT</a></li>
+                    <li><a href= "News.html">NEWS</a></li>
+                    <li><a href= "Contact.html">CONTACT</a></li>
+                    <li><a href= "https://uk.gofundme.com/f/ukblm-fund" target="_blank">DONATE</a></li>
+                    <li><a href="#" class="signup"><span>SIGN UP</span></a></li>
+                </ul>
+            </div>
+            <div class="banner">
+                <div class="app-text">
+                    <h1 class="anime">ABOUT</h1>
+                    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+                    <p class="anime1">Black Lives Matter (BLM) is an international human rights movement, originating from within the African-American community, which campaigns against violence and systemic racism towards black people. <br><br>
+                        BLM regularly holds protests speaking out against police brutality and police killings of black people, and broader issues such as racial profiling, and racial inequality in the United States criminal justice system.<br> <br>
+                        BLM  was founded in 2013 in response to the acquittal of Trayvon Martin’s murderer. <br> <br>
+                        Black Lives Matter Foundation Inc is a global organisation in the US, UK, and Canada, whose mission is to eradicate white supremacy and build local power to intervene in violence inflicted on Black communities by the state and vigilantes. <br> <br>
+                        By combating and countering acts of violence, creating space for Black imagination and innovation, and centering Black joy, we are winning immediate improvements in our lives.</p>
+                        <div class="play-btn">
+                            <div class="play-btn-inner"></div>
+                        </div>
+                </div>
+                <div class="app-picture">
+                    <img style="float: right;" src="images/img_3134.jpg">
+                </div>
+            </div>
+        </div>
+        <!--This is the javascript part of the code. THe following line of code helps link the html and Js without having to open a javascript file-->
+        <script type="text/javascript">
+        const text = baffle('.anime');
+text.set({
+    characters : '/▓▒ ▒<>▓< ░██▒> >▒▒ ▓▓/░/ ██▓█ <▓▒ ▒▒░▓ ▓▓▒░',
+    speed: 120
+});
+text.start();
+text.reveal(4000);
+</script>
+    </body>
+</html>

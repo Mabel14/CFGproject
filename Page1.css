@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+}
+.logo img{
+    width: 80px;
+    margin-top: -20px;
+    margin-right: 48px;
+}
+.signup{
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(black,black), radial-gradient(circle at top left, #1B1B1B, #7F7F7F);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.signup span{
+    display: block;
+    padding: 8px 22px;
+}
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: white;
+}
+.app-text{
+    width: 50%;
+    float: left;
+}
+.app-text h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+}
+.app-text p{
+    width: 650px;
+    font: size 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: white;
+}
+.app-picture{
+    width:50%;
+    float: right;
+}
+.app-picture img{
+    width: 70%;
+    margin-top: -20px;
+    padding-left: 50px;
+}
+* NEWS PAGE *
+body{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    font-family: sans-serif;
+}
+    .menu ul{
+        display: inline-flex;
+        margin: 50px;
+    }
+    .menu ul li{
+        list-style: none;
+        margin: 0 20px;
+        color: white;
+        cursor: pointer;
+    }
+    .logo img{
+        width: 80px;
+        margin-top: -20px;
+        margin-right: 48px;
+    }
+    .signup{
+        top: 40px;
+        right: 80px;
+        position: absolute;
+        text-decoration: none;
+        color: white;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        background-image: linear-gradient(black,black), radial-gradient(circle at top left, #1B1B1B, #7F7F7F);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+    .signup span{
+        display: block;
+        padding: 8px 22px;
+    }
+.wrapper{
+    position: relative;
+    top: 20%;
+    left:20%;
+    transform: translate(-20%, -20%);
+}
+.wrapper h2{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 0 rgba(0,0,0,.5);
+    font-size: 60px;
+ }
+ span:before{
+    content:'';
+    animation: animate infinite 4s;
+ }
+@keyframes animate {
+   0%{
+       content: 'Shukri Abdi';
+}
+35%{
+    content:'Belly Mujinga' ;
+}
+70%{
+    content: 'Breonna Taylor';
+}
+100%{
+    content: 'someone';
+}
+ }
+.container{
+    width:1280px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+position: relative;
+}
+.container .box .imgBox img{
+   max-width: 100%;
+   transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+        transform: scale(1.2);
+ }
+.container .box .details {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,.8);
+            transform: scaleY(0);
+            transition: transform .5s;
+             }
+ .container .box:hover .details {
+    transform: scaleY(1);
+     }
+.container .box .details .content{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            padding: 15px;
+            color: #fff;
+                     }
+ .container .box .details .content h2{
+     margin: 0;
+     padding: 0;
+     font-size: 20px;
+     color: #ff0;
+    }
+    .container .box .details .content p{
+        margin: 10px 0 0;
+        padding: 0;
+       }
+* CONTACT FORM *
+     *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contact-section{
+       padding: 40px 0;
+       background: #1B1B1B;
+    }
+    .contact-section h3{
+        text-align: center;
+        color:#ddd;
+    }
+    .border{
+        width: 100px;
+        height: 10px ;
+        background: #1B1B1B;
+        margin: 40px auto;
+    }
+    .contact-form{
+        max-width: 500px;
+        margin: auto;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+    .contact-form-text{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 16px 0;
+        border: 0;
+        background: #111;
+        padding: 20px 40px;
+        outline: none;
+        color: #ddd;
+        transition: 0.5s;
+    }
+    .contact-form-text:focus{
+        box-shadow: 0 0 10px 4px yellow;
+    }
+    textarea.contact-form-text{
+        resize: none;
+        height: 120px;
+    }
+    .contact-form-btn{
+        float: right;
+        border: 0;
+        background: #F3E307;
+        color: white;
+        font-weight: 900;
+        padding: 12px 50px;
+        border-radius: 15px;cursor: pointer;
+        transition: 0.5s;
+        }
+    .contact-form-btn:hover{
+        background: #B7B93E;
+        width: 200px;
+    }
+    *SUBSCRIBE FORM*
+        form{
+            align-items: center;
+            padding: 200px;
+            margin-left: 400px;
+        }
+        button{
+            border: 0;
+            width: 100px;
+            height: 30px;
+            background: #F3E307;
+            color: white;
+            border-radius: 9px;cursor: pointer;
+            transition: 0.5s;
+          }
+          button:hover{
+              width: 150px;
+              background: #B7B93E;
+          }
+        * NAV BAR (addition of colour on the links and the underline on the links have been removed)*
+          li a:hover{
+            color: yellow;
+          }
+        .active {
+            color: #4CAF50;
+          }
+          a{
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
